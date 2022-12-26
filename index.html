@@ -1,0 +1,103 @@
+<!DOCTYPE html>	
+<html>
+<head>
+    <!--MetaTags-->
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TimMim</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700%26display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c81e2cd668.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<!--Header-->
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">3D-ART</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    <div class="text-box">
+        <h1>Hi there!</h1>
+        <p>Thanks for visiting! <br>Feel free to look around and view some of my projects!</p>
+    </div>
+    </section>
+<!--About-->
+    <section class="about">
+        <h1>About Me</h1>
+        <p>Get some general Information</p>
+            <div class="row">
+                <div class="about-col">
+                    <h3>General</h3>
+                    <p>I am 15 Years old and from Germany. I work on 3D design and Coding.</p>
+                </div>
+                <div class="about-col">
+                    <h3>What I Do</h3>
+                    <p> I mainly focus on making 3D Modelling in Blender as well as coding in Java, C#, Python and (Html).</p>
+                </div>
+                <div class="about-col">
+                    <h3>Extra facts</h3>
+                    <p>-A Lot of Discord "knowledge"<br>-I speak fluent English and German</p>
+                </div>
+            </div>
+    </section>
+<!--Examples-->
+    <section class="examples">
+        <h1>Blender Artwork</h1>
+        <p>Example Projects</p>
+        <div class="row">
+            <div class="examples-col">
+                <img src="images/DonutExample.png">
+                <h3>PHOTO REALISTIC DONUT</h3>
+            </div>
+            <div class="examples-col">
+                <img src="images/CandyCaneExample.png">
+                <h3>CANDY CANES</h3>
+            </div>
+            <div class="examples-col">
+                <img src="images/HackerRoomExample.png">
+                <h3>HACKER ROOM</h3>
+            </div>
+        </div>
+    </section>
+    <!--Footer-->
+    <section class="footer">
+        <div class="footer-row">
+            <div class="footer-col">
+                <a href="https://discord.gg/MwSfrjnPFe" target="_blank"><i class="fa-brands fa-discord fa-5x"></i></a>
+            </div>
+            <div class="footer-col">
+                <a href="https://instagram.com/tim__mim/?hl=de" target="_blank"><i class="fa-brands fa-instagram fa-5x"></i></a>
+            </div>
+            <div class="footer-col">
+                <a href="https://twitter.com/Tim__Mim" target="_blank"><i class="fa-brands fa-twitter fa-5x"></i></a>
+            </div>
+            <div class="footer-col">
+            <i class="fa-solid fa-link fa-5x"></i>
+            </div>
+        </div>
+
+        <p><i class="fa-regular fa-copyright"></i>  2022 TimMim</p>
+    </section>
+    <!--Javascript sidebar Menu für Handy amogus-->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+</body>
+</html>
